@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angerlo's Nieuws Archive</title>
-    <link rel="stylesheet" href="./css/general-style.css">
-    <link rel="stylesheet" href="./css/header-style.css">
-    <link rel="stylesheet" href="./css/archive-style.css">
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/general-style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/header-style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/archive-style.css') }}">
 </head>
 <body>
     <header class="red-bg container desktop">
-        <a class="site-titel" href="../index.html">
+        <a class="site-titel" href="/">
           Angerlo's Nieuws
         </a>
         <div class="flex1"></div>
@@ -38,7 +39,7 @@
     </header>
 
     <header class="red-bg phone">
-        <a class="site-titel" href="../index.html">
+        <a class="site-titel" href="/">
           Angerlo's Nieuws
         </a>
         <div class="dropdown">

@@ -8,19 +8,19 @@
     <title>Angerlo's Nieuws</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="./style/general-style.css">
-    <link rel="stylesheet" href="./style/header-style.css">
-    <link rel="stylesheet" href="./style/index-style.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/general-style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/header-style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/index-style.css') }}">
   </head>
 
   <body>
     <header class="red-bg container desktop">
-      <a class="site-titel"  href="">
+      <a class="site-titel"  href="/">
         Angerlo's Nieuws
       </a>
       <div class="flex1"></div>
       <nav class="container">
-        <a class="nav-element" href="./pages/archive.html">
+        <a class="nav-element" href="./archive.html">
           De krant
         </a>
         <a class="nav-element">
@@ -43,7 +43,7 @@
     </header>
 
     <header class="red-bg phone">
-      <a class="site-titel" href="">
+      <a class="site-titel" href="/">
         Angerlo's Nieuws
       </a>
       <div class="dropdown">
@@ -51,7 +51,7 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <nav class="col dropdown-content">
-          <a class="nav-element" href="/pages/archive.html">
+          <a class="nav-element" href="./archive.html">
             De krant
           </a>
           <a class="nav-element">
