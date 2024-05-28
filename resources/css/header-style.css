@@ -1,0 +1,69 @@
+.phone{
+    display: none;
+}
+
+header a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header a:hover { background-color: #B60524 !important; color: white !important; }
+
+.navbar-brand {
+    font-family: "Anton", sans-serif;
+    margin-left: 10px;
+}
+
+.nav-element{
+    padding: 14px 20px 0px 20px;
+}
+
+.site-titel{
+    padding: 12px 20px 12px 20px; 
+    font-size: larger;
+}
+
+@media only screen and (max-width: 950px) {
+    .nav-element{
+        padding: 14px 14px 0px 14px;
+    }
+    
+    .site-titel{
+        padding: 12px 14px 12px 14px; 
+        font-size: larger;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-element{
+        padding: 7px 7px 0px 7px;
+    }
+    
+    .site-titel{
+        padding: 6px 7px 6px 7px; 
+        font-size: larger;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .phone{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    .nav-element{
+        background-color: blue;
+    }
+    .dropdown-content a:hover {
+        background-color: #DD052B;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
