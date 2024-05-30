@@ -12,23 +12,3 @@
     border: solid #D3D3D3 1px;
     padding: 25px;
 }
-
-.item-archive{
-    width: min-content;
-}
-
-.wrap{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
-    row-gap: 20px;
-    justify-content: center;
-    place-items: center;
-}
-
-.content-archive-grid{
-    display: grid;
-    grid-column-gap:20px;
-    grid-row-gap: 20px;
-    grid-template-columns: 1fr 1fr;
-}
