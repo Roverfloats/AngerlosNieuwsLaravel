@@ -6,9 +6,30 @@
 }
 
 .content-archive{
-    width: calc(100%-100px);
+    width: calc(100% - 100px);
     margin: 20px 50px;
     background: white;
     border: solid #D3D3D3 1px;
-    padding: 25px;
+    justify-content: center;
+}
+
+.item-archive{
+    width: min-content;
+    margin: 20px;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 900px) {
+    .wrap{
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: column;
+        width:min-content;
+    } 
 }
