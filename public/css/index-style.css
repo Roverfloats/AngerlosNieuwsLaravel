@@ -7,11 +7,6 @@
     padding: 14px;
 }
 
-/* .box{
-    height: calc(800px/12*11);
-    width: calc(800px);
-} */
-
 .sidebar{
     height: initial;
     width: fit-content;
