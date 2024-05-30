@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/archive.html', function () {
     return view('archive');
 });
+
+Route::get('/article.html', function () {
+    return view('article');
+});
