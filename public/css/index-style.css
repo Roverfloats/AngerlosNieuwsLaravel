@@ -1,0 +1,66 @@
+.content{
+    height: min-content;
+    width: fit-content;
+    margin: auto;
+    background: white;
+    border: solid #D3D3D3 1px;
+    padding: 14px;
+}
+
+/* .box{
+    height: calc(800px/12*11);
+    width: calc(800px);
+} */
+
+.sidebar{
+    height: initial;
+    width: fit-content;
+    border-left: solid #D3D3D3 1px;
+}
+
+.big-artical{
+    margin: 0px 10px 0px 0px;
+    height: 400px;
+    width: 800px;
+    background-color: aqua;
+}
+
+.artical{
+    height: 130px;
+    width: 260px;
+}
+
+.medium-artical{
+    height: 197px;
+    width: 394px;
+}
+
+.small-artical-container{
+    margin: 10px 10px 0px 0px;
+}
+
+.medium-artical-container{
+    margin: 10px 10px 0px 0px;
+}
+
+.news-paper{
+    height: 297px; /*a4 ratio (210*297) */
+    width: 210px;
+    background-color: aqua;
+    margin: 0px 0px 0px 10px;
+}
+
+.up-to-date{
+    width: 210px;
+    height: 100px;
+    background-color: #F1F1F1;
+    border: #DD052B solid 2px;
+    margin: 10px 0px 0px 10px;
+}
+
+.recent{
+    background-color: blueviolet;
+    flex: 1;
+    width: 210px;
+    margin: 10px 0px 0px 10px;
+}
