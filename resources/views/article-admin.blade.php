@@ -7,7 +7,7 @@
     <title>Angerlo's Nieuws | Artikel Beheer</title>
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/general-style.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/article-editor-style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/article-admin-style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome/css/all.css') }}">
 </head>
 
@@ -18,13 +18,31 @@
         <div class="spacer">
             <div class="article-list">
                 <input placeholder="Artikel Zoeken..." class="article-search" type="text">
-                {{-- <x-small-article> --}}
+                {{-- Loop here: --}}
+                <div class="article-item">
+                    <p class="article-item-time">10:00</p>
+                    <p class="article-item-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <div class="article-item-buttons-container">
+                        <button class="button-icon"><i class="fa-regular fa-star"></i></i></button>
+                        {{-- on click: highlight item, UNLESS there are 4 highlights already --}}
+                        <button class="button-icon"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="spacer">
             <div class="article-list">
                 <input placeholder="Artikel Zoeken..." class="article-search" type="text">
-                {{-- <x-small-article> --}}
+                {{-- Loop here: --}}
+                <div class="article-item">
+                    <p class="article-item-time">10:00</p>
+                    <p class="article-item-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <div class="article-item-buttons-container">
+                        <button class="button-icon"><i class="fa-regular fa-star"></i></i></button>
+                        {{-- on click: highlight item, UNLESS there are 4 highlights already --}}
+                        <button class="button-icon"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="spacer">
@@ -32,16 +50,18 @@
                 <div class="article-list featured">
                     {{-- Loop here: --}}
                     <div class="article-item">
-                        <p>10:00</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <button class="button-icon"><i class="fa-solid fa-star"></i></button>
-                        <button class="button-icon"><i class="fa-solid fa-trash"></i></button>
+                        <p class="article-item-time">10:00</p>
+                        <p class="article-item-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <div class="article-item-buttons-container">
+                            <button class="button-icon"><i class="fa-solid fa-star"></i></button> {{-- on click: remove highlight from item --}}
+                            <button class="button-icon"><i class="fa-solid fa-trash"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row-50">
                 <p style="height: 10%">Actueel Nieuws</p>
-                <textarea maxlength="100" class="relevent-input" name="" id=""></textarea>
+                <textarea maxlength="100" class="relevent-input" placeholder="..." name="" id=""></textarea>
                 <div class="relevent-buttons-container">
                     <button class="relevent-submit">Post</button>
                 </div>

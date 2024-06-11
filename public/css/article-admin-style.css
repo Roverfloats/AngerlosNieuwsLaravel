@@ -18,7 +18,8 @@ body{
 
 .article-list{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 5px;
     height: 100%;
     width: 100%;
@@ -26,7 +27,7 @@ body{
 }
 
 .article-search{
-    width: 100%;
+    width: 90%;
     height: 30px;
 }
 
@@ -65,11 +66,30 @@ body{
     height: 50px;
     border-top: solid #C9C9C9 1px;
     border-bottom: solid #C9C9C9 1px;
-    margin-bottom: 5pxs;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.article-item-time{
+    width: 20%;
+}
+
+.article-item-title{
+    width: 50%;
+    font-size: small;
+}
+
+.article-item-buttons-container{
+    display: flex;
+    width: 30%;
+    justify-content: right;
 }
 
 .button-icon{
-    height: 50px;
-    width: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    height: 40px;
+    width: 40px;
     font-size: 25px;
 }
