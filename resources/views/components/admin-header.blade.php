@@ -14,10 +14,10 @@
         </a>
         <div class="flex1"></div>
         <nav class="container">
-            <a class="nav-element" href="#">
+            <a class="nav-element" href="{{ route('article-admin') }}">
                 Artikel Beheer
             </a>
-            <a class="nav-element" href="#">
+            <a class="nav-element" href="{{ route('archive') }}">
                 Krant Beheer
             </a>
             <a class="nav-element" href="#">
@@ -26,26 +26,10 @@
             <a class="nav-element" href="#">
                 Blog & Vlogs Beheer
             </a>
-            <a class="nav-element" href="/">
+            <a class="nav-element" href="{{ route('home') }}">
                 Terug naar site
             </a>
         </nav>
-    </header>
-
-    <header class="red-bg dropdown-header">
-        <a class="site-titel" href="/">
-            Angerlo's Nieuws
-        </a>
-        <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-                <a href="#">Artikel Beheer</a>
-                <a href="#">Krant Beheer</a>
-                <a href="#">Agenda Beheer</a>
-                <a href="#">Blog & Vlogs Beheer</a>
-                <a href="#">Terug naar site</a>
-            </div>
-        </div>
     </header>
 </body>
 
