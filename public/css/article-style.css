@@ -2,7 +2,7 @@
     background: white;
     border: solid #D3D3D3 1px;
     margin: 20px 50px 20px 50px;
-    padding: 14px;
+    padding: 20px 50px;
 }
 
 footer{
@@ -11,12 +11,15 @@ footer{
 }
 
 .sidebar{
-    width: 350px;
-
+    width: 380px;
+    display: grid;
+    grid-template-columns: 1 auto;
+    row-gap: 10px;
+    height: min-content;
 }
 
 .article{
-    width: 80%;
+    width: 90%;
 }
 
 .replacement-png{
@@ -41,9 +44,58 @@ hr{
 
 .sidebar-element{
     width: 100%;
-    height: 50px;
+    height: 65px;
+    border: #D3D3D3 solid;
+    border-width: 1px 0px 1px 0px;
+    display: flex;
 }
 
 .margin-top-5{
     margin-bottom: 5px;
+}
+
+.replacement-png-small{
+    background-color: blue;
+    height: 100%;
+    aspect-ratio: 2 / 1;
+}
+
+.time{
+    margin: auto 0 auto 0;
+    font-size:large;
+}
+
+.side-artical{
+    margin: auto 14px auto 14px;
+    text-align: right;
+}
+
+.user-profile-pic{
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    height: 60px;
+    background-color: blue;
+}
+
+.contenent-comments-split{
+    margin: 14px 0 0 0;
+    width: 100%;
+    border-top: solid #D3D3D3 1px;
+    font-size: large;
+}
+
+.commment{
+    border: solid #D3D3D3 1px;
+    width: 91%;
+    margin: 14px auto 0 auto;
+    padding: 7px;
+}
+
+.user-name{
+    font-size: large;
+    margin: 0 0 0 14px;
+}
+
+.profile-data{
+    margin: 0 0 7px 0;
 }

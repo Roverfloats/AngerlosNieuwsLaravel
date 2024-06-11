@@ -18,7 +18,6 @@
     <div class="container content">
       <div class="col">
         <div class="big-artical">
-
         </div>
         <div class="container small-artical-container">
           <div class="artical red-bg">
