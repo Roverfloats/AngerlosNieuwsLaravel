@@ -14,23 +14,20 @@
         </a>
         <div class="flex1"></div>
         <nav class="container">
-            <a class="nav-element" href="./archive.html">
-                De krant
-            </a>
-            <a class="nav-element" href="./article-admin.html">
-                Aanlevering
+            <a class="nav-element" href="#">
+                Artikel Beheer
             </a>
             <a class="nav-element" href="#">
-                Agenda
+                Krant Beheer
             </a>
             <a class="nav-element" href="#">
-                Blog & Vlogs
+                Agenda Beheer
             </a>
             <a class="nav-element" href="#">
-                Contact
+                Blog & Vlogs Beheer
             </a>
-            <a class="nav-element" href="#">
-                Login
+            <a class="nav-element" href="/">
+                Terug naar site
             </a>
         </nav>
     </header>
@@ -42,12 +39,11 @@
         <div class="dropdown">
             <button class="dropbtn">Dropdown</button>
             <div class="dropdown-content">
-                <a href="./archive.html">De krant</a>
-                <a href="#">Aanlevering</a>
-                <a href="#">An-agenda</a>
-                <a href="#">Blog & Vlogs</a>
-                <a href="#">Contact</a>
-                <a href="#">Login</a>
+                <a href="#">Artikel Beheer</a>
+                <a href="#">Krant Beheer</a>
+                <a href="#">Agenda Beheer</a>
+                <a href="#">Blog & Vlogs Beheer</a>
+                <a href="#">Terug naar site</a>
             </div>
         </div>
     </header>
