@@ -14,16 +14,17 @@
         </a>
         <div class="flex1"></div>
         <nav class="container">
-            <a class="nav-element" href="{{ route('article-admin') }}">
+            <a class="nav-element" style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">
                 Artikel Beheer
             </a>
-            <a class="nav-element" href="{{ route('archive') }}">
+            <a class="nav-element" style="cursor: not-allowed" title="deze functie werkt nog niet."
+                href="{{ route('archive') }}">
                 Krant Beheer
             </a>
-            <a class="nav-element" href="#">
+            <a class="nav-element" style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">
                 Agenda Beheer
             </a>
-            <a class="nav-element" href="#">
+            <a class="nav-element" style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">
                 Blog & Vlogs Beheer
             </a>
             <a class="nav-element" href="{{ route('home') }}">

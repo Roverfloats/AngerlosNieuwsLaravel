@@ -17,19 +17,19 @@
             <a class="nav-element" href="./archive.html">
                 De krant
             </a>
-            <a class="nav-element" href="./article-admin.html">
+            <a class="nav-element" style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">
                 Aanlevering
             </a>
-            <a class="nav-element" href="#">
+            <a class="nav-element" style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">
                 Agenda
             </a>
-            <a class="nav-element" href="#">
+            <a class="nav-element" style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">
                 Blog & Vlogs
             </a>
-            <a class="nav-element" href="#">
+            <a class="nav-element" style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">
                 Contact
             </a>
-            <a class="nav-element" href="#">
+            <a class="nav-element" style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">
                 Login
             </a>
         </nav>
