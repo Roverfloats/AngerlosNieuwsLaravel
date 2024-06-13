@@ -10,26 +10,6 @@
     
 </head>
 <body>
-    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    @csrf
-    <script>
-        var javascriptVariable = 3;
-
-        $.ajax({
-            url: "/convert-variable",
-            type: "POST",
-            data: {
-                javascript_variable: javascriptVariable,
-                _token: $('input[name="_token"]').val()
-            },
-            success: function(response) {
-                var phpVariable = response.php_variable;
-                $('#hier_komt_iets').append(phpVariable);
-                // Now you can use phpVariable in your Blade template
-            }
-        });
-    </script> -->
-
     <x-header/>
 
     <div class="container content">
@@ -53,9 +33,16 @@
                     Nunc aliquam at tellus non varius. Aenean tempor, nisi hendrerit malesuada tempus, neque diam lacinia est, eget ornare elit sem sit amet tortor. Aenean efficitur velit scelerisque justo interdum ultrices. Phasellus vel gravida tellus, sit amet rutrum sapien. Mauris maximus metus ac porta pulvinar. Nulla id congue arcu. In maximus turpis quis lorem tincidunt pretium. Phasellus et fringilla risus. Maecenas aliquam velit ut sapien facilisis mattis. Curabitur eu libero imperdiet, molestie lectus eu, convallis orci. In fermentum, felis varius lobortis congue, massa erat bibendum eros, sed auctor nisl ex ut enim. Praesent vel velit tristique, sagittis nibh ultricies, hendrerit arcu.
                 </div>
                 <div class="contenent-comments-split">
-                    comments
+                    Reactie
                 </div>
                 <div class="col comments">
+                    <textarea id="reactie" name="reactie" class="reactie" rows="1" cols="" placeholder="voeg reactie toe"></textarea>
+
+                    <div id="foo">
+                        <button class="button-reactie">
+                            Done
+                        </button>
+                    </div>
                     <div class="commment">
                         <div class="profile-data container">
                             <div class="user-profile-pic">
@@ -109,3 +96,20 @@
 </html>
 
 
+<script>
+    window.addEventListener('resize', setCommontWidth);
+    window.addEventListener('load', setCommontWidth)
+    function setCommontWidth(){
+        var element = document.getElementById('foo');
+        var positionInfo = element.getBoundingClientRect();
+        var width = positionInfo.width;
+        console.log(width);
+        document.getElementById("reactie").style.width = width + "px";
+    }
+</script>
+
+<script>
+    if (!(window.chrome)){
+        document.getElementById("reactie").rows = "3";
+    }
+</script>

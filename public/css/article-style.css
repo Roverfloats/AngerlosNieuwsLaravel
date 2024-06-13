@@ -99,3 +99,21 @@ hr{
 .profile-data{
     margin: 0 0 7px 0;
 }
+
+.reactie{
+    resize: none;
+    field-sizing: content; /*only works for chromium*/
+    width: 0px;
+    margin: 7px auto 0 auto;
+    padding: 7px;
+}
+
+#foo{
+    width: 91%;
+    margin: 14px auto 0 auto;
+}
+
+.button-reactie{
+    width: 80px;
+    float: right;
+}

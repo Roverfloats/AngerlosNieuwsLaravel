@@ -14,6 +14,9 @@ Route::get('/archive.html', function () {
 
 Route::get('/article', [ArticleController::class, 'index']);
 
+Route::get('/newspaper', function () {
+    return view('news-paper');
+});
 // Route::post('/process-variable', function (Illuminate\Http\Request $request) {
 //     $receivedVariable = $request->input('variable');
     
