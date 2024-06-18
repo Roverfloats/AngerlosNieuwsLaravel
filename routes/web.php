@@ -18,3 +18,12 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+Route::get('/article', function() {
+    return view('article');
+});
+
+Route::get('/newspaper', function () {
+    return view('news-paper');
+});
