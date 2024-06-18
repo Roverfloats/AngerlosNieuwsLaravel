@@ -72,32 +72,30 @@
                             Praesent fringilla odio a volutpat vestibulum. Nulla rhoncus sagittis ultricies. Aliquam turpis nisl, interdum non felis venenatis, aliquet aliquet tortor. Aliquam scelerisque pulvinar tortor, ut placerat elit auctor ut. Proin luctus diam vitae arcu posuere, in
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
         <div class="sidebar">
-                <div class="sidebar-element">
-                    <div class="time">10:34</div>
-                    <div class="side-artical">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                    <div class="replacement-png-small">replacement png</div>
-                </div>
-                <div class="sidebar-element">
-                    <div class="time">10:34</div>
-                    <div class="side-artical">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                    <div class="replacement-png-small">replacement png</div>
-                </div>
-                <div class="sidebar-element">
-                    <div class="time">10:34</div>
-                    <div class="side-artical">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                    <div class="replacement-png-small">replacement png</div>
-                </div>
-                <div class="sidebar-element">
-                    <div class="time">10:34</div>
-                    <div class="side-artical">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                    <div class="replacement-png-small">replacement png</div>
-                </div>
-            
+            <div class="sidebar-element">
+                <div class="time">10:34</div>
+                <div class="side-artical">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="replacement-png-small">replacement png</div>
+            </div>
+            <div class="sidebar-element">
+                <div class="time">10:34</div>
+                <div class="side-artical">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="replacement-png-small">replacement png</div>
+            </div>
+            <div class="sidebar-element">
+                <div class="time">10:34</div>
+                <div class="side-artical">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="replacement-png-small">replacement png</div>
+            </div>
+            <div class="sidebar-element">
+                <div class="time">10:34</div>
+                <div class="side-artical">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="replacement-png-small">replacement png</div>
+            </div>
         </div>
     </div>
     <footer class="dark-red-bg"></footer>
