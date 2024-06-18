@@ -35,6 +35,7 @@
                 </div>
             </div>
         </div>
+
         <div class="spacer">
             <p>Overige artikelen</p>
             <div class="article-list-and-search-container">
@@ -55,6 +56,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="spacer">
             <p>Uitgelicht</p>
             <div class="article-list-and-search-container">
@@ -74,6 +76,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="row-50">
                 <p><br></p>
                 <p style="height: 10%">Actueel Nieuws</p>

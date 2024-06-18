@@ -25,7 +25,7 @@
             </div>
             <div class="col item-archive">
                 <div class="news-paper-archive">
-
+                    
                 </div>
                 <h3 class="center-text">
                     maart 2050
