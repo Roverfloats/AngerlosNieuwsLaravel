@@ -77,15 +77,26 @@
             </div>
         </div>
         <div class="sidebar">
-            @foreach($articles as $article)
                 <div class="sidebar-element">
                     <div class="time">10:34</div>
                     <div class="side-artical">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                     <div class="replacement-png-small">replacement png</div>
-                    <!-- <h3>{{ $article->title }}</h3>
-                    <p>{{ $article->content }}</p> -->
                 </div>
-            @endforeach
+                <div class="sidebar-element">
+                    <div class="time">10:34</div>
+                    <div class="side-artical">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="replacement-png-small">replacement png</div>
+                </div>
+                <div class="sidebar-element">
+                    <div class="time">10:34</div>
+                    <div class="side-artical">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="replacement-png-small">replacement png</div>
+                </div>
+                <div class="sidebar-element">
+                    <div class="time">10:34</div>
+                    <div class="side-artical">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="replacement-png-small">replacement png</div>
+                </div>
             
         </div>
     </div>

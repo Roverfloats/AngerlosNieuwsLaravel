@@ -12,7 +12,9 @@ Route::get('/archive.html', function () {
     return view('archive');
 });
 
-Route::get('/article', [ArticleController::class, 'index']);
+Route::get('/article', function() {
+    return view('article');
+});
 
 Route::get('/newspaper', function () {
     return view('news-paper');
