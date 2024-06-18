@@ -6,11 +6,11 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/archive.html', function () {
+Route::get('/archive', function () {
     return view('archive');
 })->name('archive');
 
-Route::get('/article-admin.html', function () {
+Route::get('/article-admin', function () {
     return view('article-admin');
 })->name('article-admin');
 

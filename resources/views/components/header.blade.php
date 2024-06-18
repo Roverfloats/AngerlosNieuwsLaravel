@@ -14,7 +14,7 @@
         </a>
         <div class="flex1"></div>
         <nav class="container">
-            <a class="nav-element" href="./archive.html">
+            <a class="nav-element" href="./archive">
                 De krant
             </a>
             <a class="nav-element" style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">
@@ -42,7 +42,7 @@
         <div class="dropdown">
             <button class="dropbtn">Dropdown</button>
             <div class="dropdown-content">
-                <a href="./archive.html">De krant</a>
+                <a href="./archive">De krant</a>
                 <a href="#">Aanlevering</a>
                 <a href="#">An-agenda</a>
                 <a href="#">Blog & Vlogs</a>
