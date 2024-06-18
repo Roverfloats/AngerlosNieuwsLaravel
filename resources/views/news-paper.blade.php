@@ -6,11 +6,12 @@
     
     <link rel="stylesheet" type="text/css" href="{{ asset('css/general-style.css') }}">
 </head>
-<body>
+<body class="col">
     <x-header/>
-
-    <footer class="">
-        
-    </footer>
+    <object data="pdf/februari.pdf" type="application/pdf" class="flex1" width="100%"> <!-- in data="..." moet pdf -->
+        <p>Gefaald om PDF file te laten zien. 
+            <br><a href="pdf/februari.pdf" download>Klik hier om PDF file te dowloaden.</a> <!-- in herf="..." moet pdf -->
+        </p>
+    </object>
 </body>
 </html>
