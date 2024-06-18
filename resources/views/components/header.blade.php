@@ -43,11 +43,11 @@
             <button class="dropbtn">Dropdown</button>
             <div class="dropdown-content">
                 <a href="./archive">De krant</a>
-                <a href="#">Aanlevering</a>
-                <a href="#">An-agenda</a>
-                <a href="#">Blog & Vlogs</a>
-                <a href="#">Contact</a>
-                <a href="#">Login</a>
+                <a style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">Aanlevering</a>
+                <a style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">An-agenda</a>
+                <a style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">Blog & Vlogs</a>
+                <a style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">Contact</a>
+                <a style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">Login</a>
             </div>
         </div>
     </header>
