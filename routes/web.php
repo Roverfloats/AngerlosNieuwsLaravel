@@ -13,3 +13,11 @@ Route::get('/archive.html', function () {
 Route::get('/article-admin.html', function () {
     return view('article-admin');
 })->name('article-admin');
+
+Route::get('/article', function() {
+    return view('article');
+})->name('article');
+
+Route::get('/newspaper', function () {
+    return view('news-paper');
+})->name('news-paper');
