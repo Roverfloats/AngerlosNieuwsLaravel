@@ -6,29 +6,30 @@
 }
 
 .content-archive{
-    width: calc(100%-100px);
+    width: calc(100% - 100px);
     margin: 20px 50px;
     background: white;
     border: solid #D3D3D3 1px;
-    padding: 25px;
+    justify-content: center;
 }
 
 .item-archive{
     width: min-content;
+    margin: 20px;
 }
 
 .wrap{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
-    row-gap: 20px;
-    justify-content: center;
-    place-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.content-archive-grid{
-    display: grid;
-    grid-column-gap:20px;
-    grid-row-gap: 20px;
-    grid-template-columns: 1fr 1fr;
+@media only screen and (max-width: 900px) {
+    .wrap{
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: column;
+        width:min-content;
+    } 
 }
