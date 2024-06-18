@@ -14,7 +14,7 @@
         </a>
         <div class="flex1"></div>
         <nav class="container">
-            <a class="nav-element" style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">
+            <a class="nav-element" href="/article-admin">
                 Artikel Beheer
             </a>
             <a class="nav-element" style="cursor: not-allowed" title="deze functie werkt nog niet."
