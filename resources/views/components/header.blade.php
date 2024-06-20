@@ -29,7 +29,7 @@
             <a class="nav-element" style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">
                 Contact
             </a>
-            <a class="nav-element" style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">
+            <a class="nav-element" href="./login">
                 Login
             </a>
         </nav>
@@ -47,7 +47,7 @@
                 <a style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">An-agenda</a>
                 <a style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">Blog & Vlogs</a>
                 <a style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">Contact</a>
-                <a style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">Login</a>
+                <a href="./login">Login</a>
             </div>
         </div>
     </header>

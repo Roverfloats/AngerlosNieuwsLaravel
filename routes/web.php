@@ -34,3 +34,7 @@ Route::get('/article', function() {
 Route::get('/newspaper', function () {
     return view('news-paper');
 })->name('news-paper');
+
+Route::get('/login', function () {
+    return view('./auth/login');
+})->name('login');
