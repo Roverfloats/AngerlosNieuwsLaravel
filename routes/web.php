@@ -1,7 +1,5 @@
 <?php
 
-// use App\Http\Controllers\article;
-use App\Http\Controllers\articles;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -10,7 +8,6 @@ Route::get('/', function () {
 
 Route::get('/archive', function () {
     return view('archive');
-
 })->name('archive');
 
 Route::get('/article-admin', function () {
@@ -24,17 +21,3 @@ Route::get('/article', function() {
 Route::get('/newspaper', function () {
     return view('news-paper');
 })->name('news-paper');
-
-
-
-//Khalil werk -->
-Route::post('/createArticle', [articles::class, 'createArticle'])->name('createArticle');
-
-// TODO  replace this with the actual page of the article display
-Route::get('/article-editor', [articles::class, 'displayInformation'])->name('displayInformation');
-
-
-// TODO  Delete this route, before commiting 
-
-
-Route::get('{id}', [articles::class, 'deleteArticle'])->name('deleteArticle');
