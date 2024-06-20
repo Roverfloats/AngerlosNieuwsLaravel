@@ -20,7 +20,7 @@ Route::get('/article-editor', [articles::class, 'displayInformation'])->name('di
 
 
 // TODO  Delete this route, before commiting 
-Route::get('/', function () {
+Route::get('/upload-article', function () {
     return view('upload-article');
 });
 
