@@ -52,3 +52,5 @@ Route::get('/article-editor', function () {
 Route::get('/upload-article', function () {
     return view('./upload-article');
 })->name('upload-article');
+
+Route::get('/articles/{id}', [articles::class, 'show'])->name('articles.show');
