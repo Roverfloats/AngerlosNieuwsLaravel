@@ -61,10 +61,5 @@ class articles extends Controller
         return view('article', compact('article'));
     }
 
-public function commentsSection() {
-
-    
-}    
-
 
 }

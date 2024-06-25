@@ -28,43 +28,36 @@
                 <div class="contenent-comments-split">
                     Reactie
                 </div>
+                
                 <div class="col comments">
-                    <textarea id="reactie" name="reactie" class="reactie" rows="1" cols="" placeholder="voeg reactie toe"></textarea>
+                    @auth
+                    <form action="{{ route('comments.store') }}" method="POST">
+                    @csrf
+                    <input type="hidden" name="article_id" value="{{ $article->id }}">
+                    <div class="form-group">
+                        <label for="content">Add a Comment:</label>
+                        <textarea name="content" id="content" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    @endauth
 
-                    <div id="foo">
-                        <button class="button-reactie">
-                            Done
-                        </button>
-                    </div>
-                    <div class="commment">
-                        <div class="profile-data container">
-                            <div class="user-profile-pic">
-                                <!-- replacement png -->
-                            </div>
-                            <div class="user-name">
-                                naam
-                            </div>
-                        </div>
-                        <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et laoreet felis. Donec ornare, urna non accumsan hendrerit, tortor sapien maximus dolor, eu efficitur enim diam id ligula. Vivamus lobortis feugiat vulputate. In enim sapien, lobortis sed facilisis et, tempor porttitor metus. Aliquam gravida varius semper. Praesent vitae turpis nunc. Aenean scelerisque ornare odio, nec tempor neque. Phasellus ex sem, placerat eget tristique id, pulvinar ut elit. Vivamus interdum efficitur vehicula.
-                            Praesent fringilla odio a volutpat vestibulum. Nulla rhoncus sagittis ultricies. Aliquam turpis nisl, interdum non felis venenatis, aliquet aliquet tortor. Aliquam scelerisque pulvinar tortor, ut placerat elit auctor ut. Proin luctus diam vitae arcu posuere, in
-                        </div>
-                    </div>
+                    <h2>Comments</h2>
 
-                    <div class="commment">
-                        <div class="profile-data container">
-                            <div class="user-profile-pic">
-                                <!-- replacement png -->
+                    @isset($article->comments)
+                        @foreach($article->comments as $comment)
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ $comment->user->name }}</h5>
+                                    <p class="card-text">{{ $comment->content }}</p>
+                                    <p class="card-text"><small class="text-muted">{{ $comment->created_at->diffForHumans() }}</small></p>
+                                </div>
                             </div>
-                            <div class="user-name">
-                                naam
-                            </div>
-                        </div>
-                        <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et laoreet felis. Donec ornare, urna non accumsan hendrerit, tortor sapien maximus dolor, eu efficitur enim diam id ligula. Vivamus lobortis feugiat vulputate. In enim sapien, lobortis sed facilisis et, tempor porttitor metus. Aliquam gravida varius semper. Praesent vitae turpis nunc. Aenean scelerisque ornare odio, nec tempor neque. Phasellus ex sem, placerat eget tristique id, pulvinar ut elit. Vivamus interdum efficitur vehicula.
-                            Praesent fringilla odio a volutpat vestibulum. Nulla rhoncus sagittis ultricies. Aliquam turpis nisl, interdum non felis venenatis, aliquet aliquet tortor. Aliquam scelerisque pulvinar tortor, ut placerat elit auctor ut. Proin luctus diam vitae arcu posuere, in
-                        </div>
-                    </div>
+                        @endforeach
+                    @else
+                        <p>No comments yet.</p>
+                    @endisset
+                    
                 </div>
             </div>
         </div>

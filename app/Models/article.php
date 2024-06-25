@@ -31,4 +31,10 @@ class Article extends Model
         'featured' => 'boolean',
         'published_at' => 'datetime',
     ];
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
+
 }

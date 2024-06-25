@@ -23,7 +23,8 @@ class CommentController extends Controller
             'content' => $validatedData['content'],
         ]);
 
-        return response()->json($comment, 201);
+        return redirect()->route('articles.show', $validatedData['article_id'])
+                         ->with('success', 'Comment added successfully.');
     }
 
     /**

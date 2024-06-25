@@ -3,6 +3,7 @@ use App\Http\Controllers\articles;
 use App\Models\article;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CommentController;
 
 require __DIR__.'/auth.php';
 
@@ -54,3 +55,5 @@ Route::get('/upload-article', function () {
 })->name('upload-article');
 
 Route::get('/articles/{id}', [articles::class, 'show'])->name('articles.show');
+
+Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
