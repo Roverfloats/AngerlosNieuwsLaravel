@@ -14,7 +14,7 @@
         </a>
         <div class="flex1"></div>
         <nav class="container">
-            <a class="nav-element" href="./archive">
+            <a class="nav-element" href="{{ route('archive') }}">
                 De krant
             </a>
             <a class="nav-element" style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">
@@ -29,13 +29,13 @@
             <a class="nav-element" style="cursor: not-allowed" title="deze functie werkt nog niet." href="#">
                 Contact
             </a>
-            <a class="nav-element" href="./login">
+            <a class="nav-element" href="{{ route('login') }}">
                 Login
             </a>
         </nav>
     </header>
 
-    <header class="red-bg dropdown-header">
+    <!-- <header class="red-bg dropdown-header">
         <a class="site-titel" href="/">
             Angerlo's Nieuws
         </a>
@@ -50,7 +50,7 @@
                 <a href="./login">Login</a>
             </div>
         </div>
-    </header>
+    </header> -->
 </body>
 
 </html>
