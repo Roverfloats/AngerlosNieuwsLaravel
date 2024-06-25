@@ -49,7 +49,6 @@ class articles extends Controller
     public function displayInformation()
     {
         return view('article-editor', ['articles' => article::all()]);
-
     }
     public function update()
     {

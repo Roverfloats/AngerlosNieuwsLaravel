@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\articles;
+use App\Models\article;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -44,7 +45,9 @@ Route::get('/login', function () {
 Route::post('/createArticle', [articles::class, 'createArticle'])->name('createArticle');
 
 // TODO  replace this with the actual page of the article display
-Route::get('/article-editor', [articles::class, 'displayInformation'])->name('article-editor');
+Route::get('/article-editor', function () {
+    return view('article-editor', ['articles' => article::all()]);
+})->name('article-editor');
 
 Route::get('/upload-article', function () {
     return view('./upload-article');

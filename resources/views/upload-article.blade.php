@@ -45,9 +45,7 @@
             </div>
             <button type="submit">Versturen</button>
         </form>
-        <form action="{{route('displayInformation')}}" method="GET">
-            <button>Overview</button>
-        </form>
+ 
     </div>
 </body>
 

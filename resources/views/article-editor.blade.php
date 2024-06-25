@@ -22,7 +22,7 @@
             <!-- <h1>{{$item->img}}</h1> -->
             <!-- <h1>{{$item->description}}</h1> -->
 
-            <a href="{{ route('deleteArticle', ['id' => $item->id]) }}">delete</a>
+            <!-- -->
 
             <form>
                 <button>Edit</button>
