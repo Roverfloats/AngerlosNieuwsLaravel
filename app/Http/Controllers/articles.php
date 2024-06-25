@@ -55,10 +55,16 @@ class articles extends Controller
 
     }
 
-public function commentsSection() {
+    public function commentsSection() {
 
+        
+    }
+
+    public function user($id){
+
+        echo $id;
+        // return view('article');
+    }
     
-}    
-
 
 }

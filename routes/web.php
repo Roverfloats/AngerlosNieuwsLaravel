@@ -30,9 +30,11 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/article', function() {
-    return view('article');
-})->name('article');
+// Route::get('/article/{id}', function() {
+//     return view('article', ['articles' => article::all()]);
+// })->name('article');
+
+Route::get('/article/{id}', [Articles::class, 'user']);
 
 Route::get('/newspaper', function () {
     return view('news-paper');
@@ -46,7 +48,7 @@ Route::post('/createArticle', [articles::class, 'createArticle'])->name('createA
 
 // TODO  replace this with the actual page of the article display
 Route::get('/article-editor', function () {
-    return view('article-editor', ['articles' => article::all()]);
+    return view('article-editor');
 })->name('article-editor');
 
 Route::get('/upload-article', function () {
