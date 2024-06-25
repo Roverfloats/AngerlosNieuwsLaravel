@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\articles;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +18,8 @@ Route::get('/archive', function () {
 Route::get('/article-admin', function () {
     return view('article-admin');
 })->name('article-admin');
+
+
 
 Route::get('/', function () {
     return view('home');
@@ -38,3 +40,12 @@ Route::get('/newspaper', function () {
 Route::get('/login', function () {
     return view('./auth/login');
 })->name('login');
+
+Route::post('/createArticle', [articles::class, 'createArticle'])->name('createArticle');
+
+// TODO  replace this with the actual page of the article display
+Route::get('/article-editor', [articles::class, 'displayInformation'])->name('article-editor');
+
+Route::get('/upload-article', function () {
+    return view('./upload-article');
+})->name('upload-article');
